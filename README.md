@@ -1,10 +1,6 @@
 # 2.3 JPA with MongoDB
 Create a Spring Boot Application that connects with MongoDB.
 
-
-
-
-
 ## Questions
 
 * How many customers were created in the database?
@@ -33,6 +29,22 @@ Customer and Product, estos nombres se asignan por defecto, para que no sea asi,
 ```
 @Document(collection = "nombre")
 ```
+## Querys
+* Todos where the dueDate has expired
+
+![](img/1.PNG)
+
+* Todos that are assigned to given user and have priority greater equal to 5
+
+![](img/2.PNG)    
+
+* Users that have assigned more than 2 Todos.
+
+![](img/3.PNG)
+
+* Todos that contains a description with a length greater than 30 characters  
+
+![](img/4.PNG)
 
 ## Steps
 
@@ -207,3 +219,12 @@ Customer and Product, estos nombres se asignan por defecto, para que no sea asi,
     * Todos that contains a description with a length greater than 30 characters        
 
 8. Implement the queries of the previous step using *derived query methods* in your repository interface. Is it possible to implement all of them?
+
+## Author
+Luis Alejandro Jaramillo R.
+
+## Codigo de Honor
+[Txt](/CoHonor.txt)
+
+## License
+[MIT License ](/LICENSE)
